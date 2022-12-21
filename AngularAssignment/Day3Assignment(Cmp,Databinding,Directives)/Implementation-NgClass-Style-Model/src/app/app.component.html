@@ -1,0 +1,20 @@
+
+
+<div class="Container">
+  <label>EmployeeName:
+    <div class="mydiv">
+    <input type="text" class="form-control" [(ngModel)]="EmployeeName">
+  </div></label>
+    <div>
+      <button class="btn btn-info"(click)= ShowDetails()>ShowDetails</button>
+    </div>
+    <br>
+    <div class="content">
+    <div *ngIf="!IsHide">
+      <p [ngStyle]="{'background-color':'DarkSalmon','border':'1px solid'}"
+      [ngClass]="{'white-text':EmployeeName!=''}"> {{Message}}</p>
+      <p [ngStyle]="{'background-color':'AntiqueWhite','border':'1px solid'}"
+      [ngClass]="{'white-text':EmployeeName!=''}"> {{EmployeeName}}</p>
+    </div>
+    </div>
+  </div>

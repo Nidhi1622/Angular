@@ -1,0 +1,13 @@
+.Container{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+.Content{
+    padding: 70px 0;
+    border: 2px solid rgb(175, 108, 50);
+    text-align: center;
+    background-color:ivory;
+}

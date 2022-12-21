@@ -1,0 +1,12 @@
+
+<div class="mydiv">
+  <button (click)= Ontoggle()>Display Details </button>
+  <div *ngIf="!Show">
+    <p>My Name is Nidhi Varthi</p>
+  </div>
+  <div *ngFor="let NumsItems of Nums"
+  [ngStyle]="{backgroundColor: NumsItems >= 5 ?'blue':'offwhite'}"
+  [ngClass]="{'color-class' : NumsItems >= 5}">
+  {{NumsItems}}</div>
+</div>
+

@@ -1,0 +1,27 @@
+
+ <div class='container'>
+  <div class='head'>
+    <h1>Welcome to Yash.......</h1>
+  </div><br>
+  
+  <div class="Container-one">
+    <label>Enter Number upto 5 : <input type="text" class="form-control" [(ngModel)]="num">
+    </label> <br>
+    <div class="Content">
+      <div [ngSwitch]="num">
+      <br>
+      <div *ngSwitchCase="'1'">The NumberYouEntered:1</div>
+      <div *ngSwitchCase="'2'">The NumberYouEntered:2</div>
+      <div *ngSwitchCase="'3'">The NumberYouEntered:3</div>
+      <div *ngSwitchCase="'4'">The NumberYouEntered:4</div>
+      <div *ngSwitchCase="'5'">The NumberYouEntered:5</div>
+      <div *ngSwitchDefault>The Number You Entered is not Available</div>
+    </div>
+  </div>
+  <div class="DIV">
+    <ul>
+      <li *ngFor='let i of EmpName'> {{i}} </li>
+    </ul>
+  </div>
+</div>
+</div>
