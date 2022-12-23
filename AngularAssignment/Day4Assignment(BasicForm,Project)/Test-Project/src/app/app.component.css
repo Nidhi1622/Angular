@@ -1,0 +1,6 @@
+.Container{
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(144, 159, 9);
+    padding: 10px;
+}

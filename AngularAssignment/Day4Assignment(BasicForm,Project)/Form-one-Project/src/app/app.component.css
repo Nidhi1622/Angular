@@ -1,0 +1,13 @@
+.Container{
+    border: 1px solid;
+
+}
+.ResultDiv{
+    margin: auto;
+    width: 50%;
+    border: 2px solid rgb(4, 133, 152);
+    padding: 10px;
+    color: blueviolet;
+background-color: beige;
+
+}

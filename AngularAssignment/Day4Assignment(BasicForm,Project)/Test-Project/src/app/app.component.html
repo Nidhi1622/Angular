@@ -1,0 +1,47 @@
+<body>
+  <div class="Container" >
+<form [formGroup]="empform" (ngSubmit)="onSubmit()">
+
+<div>
+<label><b>Project Name:</b></label>
+<input type="text" placeholder="name" formControlName="ProjectName" [pattern]="namepattern">
+<div style="color: red;" *ngIf="empform.controls['ProjectName'].touched && empform.controls['ProjectName'].invalid">
+  <span *ngIf="empform.controls['ProjectName'].hasError('required')">name is required</span>
+  <span *ngIf="empform.controls['ProjectName'].hasError('pattern')">only alphabate with
+      space between 2 to 20 charecters
+  </span>
+</div>
+</div><br>
+
+<div>
+<label><b>Project Status: </b></label>
+<select placeholder="ProjectStatus" formControlName="ProjectStatus" required>
+<option disabled></option>
+<option>stable</option>
+<option>critical</option>
+<option>finished</option></select>
+    <div style="color: red;" *ngIf="empform.controls['ProjectStatus'].touched && empform.controls['ProjectStatus'].invalid">
+      <span *ngIf="empform.controls['ProjectStatus'].hasError('required')">select drop down list</span>
+    </div>
+</div>
+<br>
+
+
+<div>
+<label for="Email"><b>Email Address </b></label>
+<input type="text" placeholder="Email" formControlName="Email" [pattern]="emailpattern" required>
+<div style="color: red;" *ngIf="empform.controls['Email'].touched && empform.controls['Email'].invalid">
+  <span *ngIf="empform.controls['Email'].hasError('required')">Email is required</span>
+  <span *ngIf="empform.controls['Email'].hasError('pattern')">inavlid Email</span>
+</div>
+</div><br>
+
+<div>
+<input type="submit" value="submit">
+</div>
+</form>
+<br>
+<span style="color: red;"  *ngIf="isTest">please change project name</span>
+
+</div>
+</body> 

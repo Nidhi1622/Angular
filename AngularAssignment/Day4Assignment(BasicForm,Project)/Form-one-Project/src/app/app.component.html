@@ -1,0 +1,80 @@
+<div class="container ">
+
+  <h1 class="text-center">Welcome to Yash Technologies</h1>
+ 
+  <form #register="ngForm" (ngSubmit)= "registerFunc()">
+    
+    
+    <div class="mb-3">
+
+      <label for="Email" class="form-label">Email</label>
+
+      <input type="Email" class="form-control" id="Email"  placeholder="Email" [(ngModel)]="form.Email" name="Email" #Email="ngModel" required>
+
+      <div *ngIf="isHide">
+
+        <small  class="text-danger" >Email field is requird</small>
+
+        <small class="text-danger" *ngIf="Show">Please enter a valid Email.</small>
+
+      </div>
+
+    </div>
+
+   <br>
+
+    <div class="mb-3">
+
+      <label for="Subscription" class="form-label">Subscription
+        <select class="form-control"  [(ngModel)]="form.Subscription" name="Subscription" #Subscription="ngModel">
+          <option value="Default"></option>
+          <option value="Basic">Basic</option>
+          <option value="Advanced">Advanced</option>
+          <option value="Pro">Pro</option></select>
+         
+        
+        </label>
+        <div *ngIf="isHide1">
+          <small class="text-danger" >Subscription field is requird</small>
+        </div>
+
+    </div>
+ 
+<br>
+    <div class="mb-3">
+
+      <label for="Password" class="form-label">Password</label>
+
+      <input type="text" class="form-control" id="Password" placeholder="Password" [(ngModel)]="form.Password" name="Password" #Password="ngModel" required >
+      <div *ngIf="isHide2">
+
+        <small class="text-danger" >Password field is required</small>
+
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="mb-3">
+      <button class="btn btn-success">Submit</button>
+    </div>
+
+  </form>
+
+</div>
+<br>
+
+<div >
+  <div  *ngIf="IsSubmitted" class="ResultDiv">
+  <p>
+  {{this.form.Email}}
+</p>
+<p>
+  {{this.form.Subscription}}
+</p>
+<p>
+  {{this.form.Password}}
+</p>  
+</div>
+</div>
