@@ -1,0 +1,56 @@
+{
+  "getAllData": [
+    {
+      "sid": 5,
+      "sname": "jaynam",
+      "address": "indore",
+      "mobno": 9098902558,
+      "email": "jaynam.sanghvi@yash.com"
+    },
+    {
+      "sid": 6,
+      "sname": "jaynam",
+      "address": "indore",
+      "mobno": 9098902558,
+      "email": "jaynam.sanghvi@yash.com"
+    },
+    {
+      "sid": 8,
+      "sname": "jaynamsanghvi",
+      "address": "pune",
+      "mobno": 9098902558,
+      "email": "jaynam.sanghvi@yash.com"
+    },
+    {
+      "sid": 8,
+      "sname": "jaynamsanghvi",
+      "address": "pune",
+      "mobno": 9098902558,
+      "email": "jaynam.sanghvi@yash.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "sname": "Palak",
+      "address": "Seoni",
+      "mobno": "9867542367"
+    },
+    {
+      "id": 3,
+      "sname": "Aditi",
+      "address": "Barod",
+      "mobno": "8948567896"
+    },
+    {
+      "id": 4,
+      "sname": "Aman",
+      "address": "Delhi",
+      "mobno": "3456880987"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

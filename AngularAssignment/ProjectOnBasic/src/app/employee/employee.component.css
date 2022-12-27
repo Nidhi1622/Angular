@@ -1,0 +1,85 @@
+
+.container{
+  padding: 15px;
+  border-radius: 10px;
+  height:30%;
+  width: 25%;
+  margin-left: 5%;
+  margin-top:3%;
+  box-shadow: 2px 2px 10px #353636;
+  background: #fff;
+}
+.item-container{
+
+  display: flex;
+  justify-content: center;
+ 
+}
+.d-flex{
+  display: flex;
+}
+.marquee{
+  margin-top: 0%;
+  font-size: 2rem;
+}
+
+.ImageOne{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+}
+
+
+input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    width: 30%;
+    background-color: #0b9160;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add a background color to the submit button on mouse-over */
+  input[type=submit]:hover {
+    background-color: #55c25b;
+    
+  }
+
+  input[type=Reset] {
+    width: 30%;
+    float: left;
+    background-color: #dcbf2b;
+    color: white;
+    padding: 7px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+
+  /* Add a background color to the submit button on mouse-over */
+  input[type=Reset]:hover {
+    background-color: #dbe843;
+    
+  }

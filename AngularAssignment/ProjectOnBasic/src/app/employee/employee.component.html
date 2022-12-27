@@ -1,0 +1,56 @@
+<div class="Imageone">
+    <div class="centered"><marquee width="100%" direction="left" height="100px"><h1>Angular Project</h1></marquee></div>
+    <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGVtcGxveWVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60 " height="100px" width="100%" >
+</div>
+<div class="d-flex">
+<div class="container">
+    <div class="item-container">
+        <div class="Content">
+            <form [formGroup]="employeeform" (ngSubmit)="onSubmit()">
+                <div class="col-sm-76">
+                    <label><b>EmpName: </b></label>
+                <input type="text" placeholder="name" formControlName="sname" [pattern]="namepattern">
+                <div style="color: red;" *ngIf="employeeform.controls['sname'].touched && employeeform.controls['sname'].invalid">
+                    <span *ngIf="employeeform.controls['sname'].hasError('required')">name is required</span>
+                    <span *ngIf="employeeform.controls['sname'].hasError('pattern')">only alphabate with space between 2 to 20 charecters</span>
+                </div>
+            </div>
+            <br>
+
+            <div>
+                <label for="address"><b>EmpAddress: </b></label>
+                <input type="text" placeholder="address" formControlName="address" required>
+                <div style="color: red;"*ngIf="employeeform.controls['address'].touched && employeeform.controls['address'].invalid">
+                    <span *ngIf="employeeform.controls['address'].hasError('required')">address is required</span>
+                </div>
+            </div>
+            <br>
+            
+            <div>
+                <label for="mobno"><b>EmpMob.No.: </b></label>
+                <input type="text" placeholder="mobile no" formControlName="mobno" required>
+                <div style="color: red;" *ngIf="employeeform.controls['mobno'].touched && employeeform.controls['mobno'].invalid">
+                    <span *ngIf="employeeform.controls['mobno'].hasError('required')">mobile no is required</span>
+                    <span *ngIf="employeeform.controls['mobno'].getError?.length">use 10 digit mob no</span>
+                </div>
+            </div>
+            <br>
+            
+            <div class="SubmitButton">
+                <input type="submit" value="submit" class="btn btn-success" >
+            </div>
+       
+        
+        <div class="ResetButton">
+            <input type="Reset" (click)=reset() value="Reset">
+        </div>
+    </form>
+    </div>
+</div>
+</div>
+
+<div class="DataList">
+    <app-employeelist (s)="EmpData($event)"></app-employeelist>
+</div> 
+</div>
+

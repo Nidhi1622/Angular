@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="item-container">
+        <h1>List of Employee</h1>
+<table class="Mytable" border="2">
+
+    <tr>
+
+        <td class="tableHead">Employee Id</td>
+        <td class="tableHead">Employee Name</td>
+        <td class="tableHead">Employee Address</td>
+        <td class="tableHead">Mobile No.</td>
+        <td class="tableHead">Delete</td>
+        <td class="tableHead">Edit</td>
+    </tr>
+
+    <tr  *ngFor = "let e of stu">
+
+        <td>{{e.id}}</td>
+
+        <td>{{e.sname}}</td>
+
+        <td>{{e.address}}</td>
+
+        <td>{{e.mobno}}</td>
+
+        <td><button (click)="deleteDataById(e.id)" class="btn btn-primary btn-lg" id="submitbtn" name="submit">Delete</button></td>
+        <td><button (click)="editDataById(e.id)" class="btn btn-primary btn-lg" id="submitbtn" name="submit">Edit</button></td>
+    </tr>
+
+</table>
+</div>
+</div>
