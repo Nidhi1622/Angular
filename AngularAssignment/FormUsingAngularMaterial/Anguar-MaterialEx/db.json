@@ -1,0 +1,36 @@
+{
+  "Register": [
+    {
+      "name": "Nidhiva",
+      "email": "nidhivarthi.yash@gmail.com",
+      "password": "12342o342dw4",
+      "skill": "Intermediate",
+      "date": "2022-12-28T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1234465938",
+      "id": 1
+    },
+    {
+      "name": "Shayli",
+      "email": "nidhivarthi1625@gmail.com",
+      "password": "12345mumu",
+      "skill": "Advance",
+      "date": "2022-12-28T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1920384756",
+      "id": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "sname": "nidhi",
+      "address": "indore ",
+      "mobno": "9098890999"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

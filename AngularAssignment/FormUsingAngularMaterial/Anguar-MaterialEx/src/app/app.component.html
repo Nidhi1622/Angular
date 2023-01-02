@@ -1,0 +1,89 @@
+<h1 style="font-weight: bold; color:indigo; text-align:center" >Registration Form</h1>
+<div class="container">
+  <div class="head"><h4  >Please Enter Your Details</h4></div>
+  
+  <form [formGroup]="studentform" (ngSubmit)="onSubmit()" novalidate>
+    <div class="card">
+    <mat-form-field  appearance="fill" class="custom-form-field">
+      <mat-label>Name:</mat-label>
+      <mat-icon class="material-icons" color="accent" matSuffix>person</mat-icon>
+      <input matInput="" placeholder="enter name" formControlName="name" class="form-input-field" id="name" pattern="^[a-zA-Z ]{6,32}$" minlength="6" maxlength="32">
+      <mat-error *ngIf="myError('name', 'required')">name is required</mat-error>
+      <mat-error *ngIf="myError('name', 'pattern')">
+        Only alphabetical characters are allowed
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="card">
+    <mat-form-field   appearance="fill" class="custom-form-field">
+        <mat-label>Email:</mat-label>
+            <mat-icon class="material-icons" color="accent" matSuffix>email</mat-icon>
+            <input matInput="" placeholder="enter email" formControlName="email" class="form-input-field" id="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <mat-error *ngIf="myError('email', 'required')">email is required</mat-error>
+            <mat-error *ngIf="myError('email', 'pattern')">Please enter vaild email</mat-error>  
+    </mat-form-field>
+  </div>
+  <br>
+
+  <div class="card">
+    <mat-form-field  appearance="fill"  class="custom-form-field">
+        <mat-label>Password:</mat-label>
+        <mat-icon class="material-icons"color="accent" matSuffix>password</mat-icon>
+        <input matInput="" placeholder="enter Password" type="password" formControlName="password" class="form-input-field" id="password" pattern="^[a-zA-Z0-9]{6,12}$" minlength="6" maxlength="12"> 
+        <mat-error *ngIf="myError('password', 'required')">Password is required</mat-error>
+        <mat-error *ngIf="myError('password', 'pattern')">
+            Only alphabetes and numbers are allowed
+            </mat-error>      
+    </mat-form-field>
+  </div>
+
+  <div class="card">
+    <mat-label>Gender:</mat-label>
+    <mat-radio-group   appearance="fill" aria-label="Gender" formControlName="gender" id="gender">
+        <mat-radio-button color="primary" value="Male">Male</mat-radio-button>
+        <mat-radio-button color="primary" value="Female">Female</mat-radio-button>
+      </mat-radio-group>
+  </div>
+<br>
+  <div class="card">
+    <mat-form-field  appearance="fill" class="custom-form-field">
+        <mat-label>Date Of Birth</mat-label>
+        <input matInput [matDatepicker]="picker" color="accent" formControlName="date" id="date">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker textprimary></mat-datepicker>
+        <mat-error *ngIf="myError('date', 'required')">date is required</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="card">
+      <mat-form-field   appearance="fill" class="custom-form-field">
+          <mat-label>Mobile No:</mat-label>
+          <mat-icon class="material-icons" color="accent" matSuffix>phone</mat-icon>
+          <input matInput placeholder="enter Mobile No"  formControlName="mobile" class="form-input-field" id="mobile" pattern="^[0-9]{10,10}$" minlength="10" maxlength="10"> 
+          <mat-error *ngIf="myError('mobile', 'required')">Mobile Number is required</mat-error>
+          <mat-error *ngIf="myError('mobile', 'pattern')">
+              Please Enter 10 digit Mobile No
+              </mat-error>      
+      </mat-form-field>
+    </div>
+<br>
+    <div class="card">
+      <mat-form-field  appearance="fill"class="custom-form-field">
+          <mat-label>Skill:</mat-label>
+          <mat-icon class="material-icons" color="accent" matSuffix>menu</mat-icon>
+          <select matNativeControl formControlName="skill" id="skill" >
+            <option value="Basic">Angular Basic</option>
+            <option value="Intermediate">Angular Intermediate</option>
+            <option value="Advance">Angular Advance</option>
+          </select>
+          <mat-error *ngIf="myError('skill', 'required')">Skills is required</mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="Mybutton">
+        <mat-card-content class="custom-form-field">
+            <button mat-raised-button color="primary" type="submit" value="submit" center>submit</button>
+        </mat-card-content>
+      </div>
+  </form>
+</div>
