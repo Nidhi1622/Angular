@@ -1,0 +1,199 @@
+{
+  "Steppperdata": [
+    {
+      "PresentAddress": "itarsi",
+      "PermanentAddress": "bhopal",
+      "id": 1
+    },
+    {
+      "FullName": "Shayli",
+      "Emailid": "nidhivarthi1625@gmail.com",
+      "MotherName": "Shayli",
+      "FatherName": "Shayli",
+      "BankFullName": "Sososo",
+      "Gender": "female",
+      "Mobile": "9988776655",
+      "Dob": "12",
+      "IFSCcode": "Sha1234",
+      "NetBanking": "yes",
+      "MobBanking": "Noi",
+      "BankAccNo": "Shayli",
+      "PresentAddress": "Bhoapl",
+      "PermanentAddress": "kjdsf",
+      "id": 2
+    },
+    {
+      "PresentAddress": "bhopal",
+      "PermanentAddress": "itarsi",
+      "id": 3
+    },
+    {
+      "FullName": "Nidhiji",
+      "Emailid": "nidhi@gmail.com",
+      "FatherName": "Yash",
+      "MotherName": "Smother",
+      "Gender": "female",
+      "Dob": "12",
+      "Mobile": "997788665431",
+      "id": 4
+    },
+    {
+      "BankAccNo": "123248",
+      "NetBanking": "No",
+      "MobBanking": "yes",
+      "BankFullName": "MONKDN",
+      "IFSCcode": "sjisru214",
+      "id": 5
+    },
+    {
+      "PresentAddress": "Indore",
+      "PermanentAddress": "Itarsi",
+      "id": 6
+    },
+    {
+      "FullName": "shaylee",
+      "Emailid": "shaylee@gmail.com",
+      "FatherName": "yashu",
+      "MotherName": "archa",
+      "Gender": "female",
+      "Dob": "15",
+      "Mobile": "6433434343",
+      "id": 7
+    },
+    {
+      "BankAccNo": "76645434",
+      "NetBanking": "no",
+      "MobBanking": "yes",
+      "BankFullName": "union",
+      "IFSCcode": "UBIN1205",
+      "id": 8
+    },
+    {
+      "PresentAddress": "bhopal",
+      "PermanentAddress": "itarsi",
+      "id": 9
+    },
+    {
+      "FullName": "nishiu",
+      "Emailid": "nishi2gmail.com",
+      "FatherName": "ram",
+      "MotherName": "seeta",
+      "Gender": "female",
+      "Dob": "13",
+      "Mobile": "8269752279",
+      "id": 10
+    },
+    {
+      "PresentAddress": "bhopal",
+      "PermanentAddress": "itarsi",
+      "id": 11
+    },
+    {
+      "BankAccNo": "765877676",
+      "NetBanking": "no",
+      "MobBanking": "yes",
+      "BankFullName": "union",
+      "IFSCcode": "6545",
+      "id": 12
+    }
+  ],
+  "Register": [
+    {
+      "name": "Nidhiva",
+      "email": "nidhivarthi.yash@gmail.com",
+      "password": "12342o342dw4",
+      "skill": "Intermediate",
+      "date": "2022-12-28T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1234465938",
+      "id": 1
+    },
+    {
+      "name": "Shayli",
+      "email": "nidhivarthi1625@gmail.com",
+      "password": "12345mumu",
+      "skill": "Advance",
+      "date": "2022-12-28T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1920384756",
+      "id": 2
+    },
+    {
+      "name": "Snehawww",
+      "email": "sneha@gmail.com",
+      "password": "123123",
+      "skill": "Basic",
+      "date": "2023-01-21T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1920384756",
+      "id": 3
+    },
+    {
+      "name": "Rumaisa",
+      "email": "reemrumi@gmail.com",
+      "password": "123434",
+      "skill": "Intermediate",
+      "date": "2023-01-10T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "1029384756",
+      "id": 4
+    },
+    {
+      "name": "Aditijain",
+      "email": "sneha@gmail.com",
+      "password": "1233233243",
+      "skill": "Intermediate",
+      "date": "2023-01-23T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9876543210",
+      "id": 5
+    },
+    {
+      "name": "Shayli",
+      "email": "shayli@gmail.com",
+      "password": "112233",
+      "skill": "Intermediate",
+      "date": "2023-01-25T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9876543210",
+      "id": 6
+    },
+    {
+      "name": "Archana",
+      "email": "archana@gmail.com",
+      "password": "123456a",
+      "skill": "Basic",
+      "date": "2023-01-18T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": "9876543210",
+      "id": 7
+    },
+    {
+      "name": "Himanshu",
+      "email": "himanshu@gmail.com",
+      "password": "12323wdew",
+      "skill": "Advance",
+      "date": "2023-01-21T18:30:00.000Z",
+      "gender": "Male",
+      "mobile": "9087612534",
+      "id": 8
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

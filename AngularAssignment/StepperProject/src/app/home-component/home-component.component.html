@@ -1,0 +1,123 @@
+<p>home-component works!</p>
+
+<mat-stepper >
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Basic Information</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>FullName</mat-label>
+          <input matInput placeholder="Last name, First name" formControlName="FullName" class="form-input-field" id="FullName" pattern="^[a-zA-Z ]{6,32}$" minlength="6" maxlength="32"required>
+          <mat-error *ngIf="ErrorFunc('FullName', 'required')">name is required</mat-error>
+          <mat-error *ngIf="ErrorFunc('FullName', 'pattern')">
+            alphabetical characters are allowed
+          </mat-error>
+        </mat-form-field>
+        <br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Emailid</mat-label>
+          <input matInput placeholder="Enter a valid email address" formControlName="Emailid" required>
+        </mat-form-field>
+        <br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>FatherName</mat-label>
+          <input matInput placeholder="Father's Name" formControlName="FatherName" required>
+        </mat-form-field>
+        <br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>MotherName</mat-label>
+          <input matInput placeholder="Mother's Name" formControlName="MotherName" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Gender</mat-label>
+          <input matInput placeholder="Mother's Name" formControlName="Gender" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Dob</mat-label>
+          <input matInput placeholder="Mother's Name" formControlName="Dob" required>
+        </mat-form-field>
+        <br>
+       
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Mobile</mat-label>
+          <input matInput placeholder="Mobile" formControlName="Mobile" required>
+        </mat-form-field>
+        <br>
+  
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </form>
+       </mat-step>
+  
+  
+       <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Bank Details</ng-template>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>BankFullName</mat-label>
+            <input matInput placeholder="BankFullName " formControlName="BankFullName" required>
+          </mat-form-field>
+          <br>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>BankAccNo</mat-label>
+            <input matInput placeholder="BankAccNo" formControlName="BankAccNo" required>
+          </mat-form-field>
+          <br>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>MobBanking</mat-label>
+            <input matInput placeholder="MobBanking" formControlName="MobBanking" required>
+          </mat-form-field>
+          <br>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>NetBanking</mat-label>
+            <input matInput placeholder="NetBanking" formControlName="NetBanking" required>
+          </mat-form-field>
+    <br>
+          <mat-form-field appearance="fill">
+            <mat-label> IFSCcode</mat-label>
+            <input matInput placeholder="IFSCcode" formControlName="IFSCcode" required>
+          </mat-form-field>
+
+          <div>
+            <button mat-button matStepperNext>Next</button>
+            <button mat-button matStepperPrevious>Back</button>
+          </div>
+        </form>
+         </mat-step>
+  
+  
+  
+  
+         
+    <mat-step [stepControl]="thirdFormGroup" label="Fill out your address">
+      <form [formGroup]="thirdFormGroup">
+        <ng-template matStepLabel>Communication Address</ng-template>
+        <mat-form-field appearance="fill">
+          <mat-label>PresentAddress</mat-label>
+          <input matInput formControlName="PresentAddress" placeholder="Ex. 1 Main St, New York, NY"required>
+        </mat-form-field>
+        <br>
+        
+        <mat-form-field appearance="fill">
+          <mat-label>PermanentAddress</mat-label>
+          <input matInput formControlName="PermanentAddress" placeholder="Ex. 1 Main St, New York, NY" required>
+        </mat-form-field>
+     
+        <br>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="Onsubmit()">Submit</button>
+        </div>
+      </form>
+    </mat-step>
+  </mat-stepper>

@@ -1,0 +1,35 @@
+
+<h1 style="font-weight: bold; color:aliceblue; text-align:center" >Login</h1>
+<div class="container">
+  <div class="head"><h4  >Please Enter Your Details</h4></div>
+  
+  <form [formGroup]="loginform" (ngSubmit)=" LoginFunc()" novalidate>
+    <div class="card">
+    <mat-form-field  appearance="fill" class="custom-form-field">
+      <mat-label>Name:</mat-label>
+      <mat-icon class="material-icons" color="accent" matSuffix>person</mat-icon>
+      <input matInput="" placeholder="enter name" formControlName="name" class="form-input-field" id="name" pattern="^[a-zA-Z ]{6,32}$" minlength="6" maxlength="32">
+      <mat-error *ngIf="ErrorFunc('name', 'required')">name is required</mat-error>
+      <mat-error *ngIf="ErrorFunc('name', 'pattern')">
+        Only alphabetical characters are allowed
+      </mat-error>
+    </mat-form-field>
+  </div>
+<br>
+  <div class="card">
+    <mat-form-field  appearance="fill"  class="custom-form-field">
+        <mat-label>Password:</mat-label>
+        <mat-icon class="material-icons"color="accent" matSuffix>password</mat-icon>
+        <input matInput="" placeholder="enter Password" type="password" formControlName="password" class="form-input-field" id="password" pattern="^[a-zA-Z0-9]{6,12}$" minlength="6" maxlength="12"> 
+        <mat-error *ngIf="ErrorFunc('password', 'required')">Password is required</mat-error>
+           
+    </mat-form-field>
+  </div>
+<br>
+   <div class="Mybutton">
+        <mat-card-content class="custom-form-field">
+            <button mat-raised-button color="primary" type="submit" value="submit" center>Login</button>
+        </mat-card-content>
+      </div>
+  </form>
+</div>
